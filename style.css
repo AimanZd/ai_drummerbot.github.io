@@ -1,0 +1,142 @@
+body {
+    background-color: #fbfbfb;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 200px; /* Added padding to prevent cards from being hidden */
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it circular */
+}
+
+.heading-text {
+    text-align: center;
+}
+
+.heading-text h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.heading-text p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.drum-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+
+.drum-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.drum-card:hover {
+    transform: translateY(-5px);
+}
+
+.drum-card:active {
+    transform: translateY(-2px);
+}
+
+.drum-img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.drum-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.drum-description {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sound {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.sound:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #222222;
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures header appears above other elements */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 18px;
+}
